@@ -71,13 +71,13 @@ public class LoginSteps {
 	}
 
 @Then("I verify {string} message")
-	public void i_verify_message(String expectedMessage) {
+	public void i_verify_message(String result) {
 
 		loginObj = new LoginPage();
 		String actualMessage = loginObj.getFailCaseText();
-		Assert.assertTrue(actualMessage.contains(expectedMessage),
-				"Expected: '" + expectedMessage + "' but got: '" + actualMessage + "'");
-		System.out.println("Verified message: " + expectedMessage);
+		Assert.assertTrue(actualMessage.contains(result),
+				"Expected: '" + result + "' but got: '" + actualMessage + "'");
+		System.out.println("Verified message: " + result);
 	}
 
 }
