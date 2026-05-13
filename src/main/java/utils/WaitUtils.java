@@ -3,6 +3,7 @@ package utils;
 import java.io.IOException;
 import java.time.Duration;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -32,5 +33,9 @@ public class WaitUtils {
 
 	public static WebElement presenceOfElementLocated(By locator) {
 		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+	}
+	public static Alert alertIsPresent()
+	{
+		return wait.until(ExpectedConditions.alertIsPresent());
 	}
 }

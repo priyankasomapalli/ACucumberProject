@@ -9,6 +9,8 @@ public class WelcomePage {
 	
 	private static By welcomePageTitle=By.tagName("h1");
 	
+	private static By jsalertsLink=By.linkText("JavaScript Alerts");
+	
 	public String getPageTitle()
 	{
 		return UiActionUtils.getText(welcomePageTitle, "Welcome page heading");
@@ -17,6 +19,11 @@ public class WelcomePage {
 	public void clickFormAuth()
 	{
 		UiActionUtils.click(formAuthLink, "Form Authentication");
+	}
+	
+	public void clickJsAlerts()
+	{
+		UiActionUtils.click(jsalertsLink, "JsAlerts");
 	}
 
 }

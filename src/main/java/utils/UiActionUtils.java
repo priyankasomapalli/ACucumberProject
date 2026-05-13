@@ -1,5 +1,6 @@
 package utils;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 
 import managers.ExtentTestManager;
@@ -22,6 +23,11 @@ public class UiActionUtils {
 		String textOfTheElementObtained=WaitUtils.presenceOfElementLocated(locator).getText();
 		ExtentTestManager.log.info("The text from the element" +elementName +"is :  " +textOfTheElementObtained);
 		return textOfTheElementObtained;
+	}
+	public static Alert alertIsPresent()
+	{
+		ExtentTestManager.log.info("Alert appeared");
+		return WaitUtils.alertIsPresent();
 	}
 
 }
