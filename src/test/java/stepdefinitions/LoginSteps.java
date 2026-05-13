@@ -40,16 +40,16 @@ public class LoginSteps {
 	}
 
 	@When("user enters username {string}")
-	public void user_enters_username(String string) {
+	public void user_enters_username(String username) {
 		loginObj = new LoginPage();
-		loginObj.sendUserName("tomsmith");
+		loginObj.sendUserName(username);
 		System.out.println("Entered Username");
 	}
 
 	@When("password as {string}")
-	public void password_as(String string) {
+	public void password_as(String password) {
 		loginObj = new LoginPage();
-		loginObj.sendPassword("SuperSecretPassword!");
+		loginObj.sendPassword(password);
 		System.out.println("Entered password");
 	}
 

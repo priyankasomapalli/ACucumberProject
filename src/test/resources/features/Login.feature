@@ -36,8 +36,11 @@ Feature: Login Functionality
     Then I verify "<result>" message
 
     Examples:
-      | username | password             | result                   |
-      | tomsmith | wrongpass            | Your password is invalid |
-      | invalid  | SuperSecretPassword! | Your username is invalid |
-
+     Examples:
+  | username | password             | result                   |
+  | tomsmith | wrongpass            | Your password is invalid |
+  | invalid  | SuperSecretPassword! | Your username is invalid |
+  |          | SuperSecretPassword! | Your username is invalid |
+  | tomsmith |                      | Your password is invalid |
+  | invalid  | wrongpass            | Your username is invalid |
     
