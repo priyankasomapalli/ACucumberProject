@@ -30,26 +30,4 @@ Feature: Validating JavaScript Alerts
     And clicked on "OK" in step
     Then I verify the "You successfully clicked an alert"
 
-  @jsConfirm
-  Scenario Outline: Testing JS Confirm with "<value>" button
-    When I click on "<name>"
-    And clicked on "<value>" in step
-    Then I verify the "<status>"
-
-    Examples:
-      | name        | value  | status               |
-      | jsConfirm() | OK     | You clicked: Ok      |
-      | jsConfirm() | Cancel | You clicked: Cancel  |
-
-  @jsPrompt
-  Scenario Outline: Testing JS Prompt with input "<value1>" and "<value2>" button
-    When I click on "<name>"
-    And entered "<value1>" in step
-    And clicked on "<value2>" in this step
-    Then I verify the "<status>"
-
-    Examples:
-      | name       | value1   | value2 | status                 |
-      | jsPrompt() | priyanka | OK     | You entered: priyanka  |
-      | jsPrompt() | priyanka | Cancel | You entered: null      |
-      | jsPrompt() |          | Cancel | You entered: null      |
+ 

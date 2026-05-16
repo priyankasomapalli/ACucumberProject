@@ -21,18 +21,23 @@ public class JSAlertsPage {
 
 	private static By resultTextJsPrompt = By.xpath("//p[text()='You entered: Priyanka JsPrompt']");
 
-	public void getJsAlertPageTitleText() {
-		UiActionUtils.getText(jsAlertPageTitle, "JsAlert page heading");
+	public String getJsAlertPageTitleText() {
+		return UiActionUtils.getText(jsAlertPageTitle, "JsAlert page heading");
 	}
 
 	public void clickJsAlert() {
 		UiActionUtils.click(jsAlertButton, "JsAlert");
-		UiActionUtils.alertIsPresent().accept();
+		
 
 	}
+	
+	public Alert performAlert()
+	{
+		return UiActionUtils.alertIsPresent();
+	}
 
-	public void getResultTextForJsAlert() {
-		UiActionUtils.getText(resultTextJsAlert, "Result text of JsAlert");
+	public String getResultTextForJsAlert() {
+		return UiActionUtils.getText(resultTextJsAlert, "Result text of JsAlert");
 	}
 
 	public static Alert clickJsConfirm() {
