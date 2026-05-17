@@ -1,111 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-16T15:46:01 EDT" name="Default suite" finished-at="2026-05-16T15:46:02 EDT" duration-ms="719">
+  <suite started-at="2026-05-17T11:17:20 EDT" name="Default suite" finished-at="2026-05-17T11:17:20 EDT" duration-ms="722">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JsPromptRunner@4b013c76]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.BugsLoginRunenr@4b013c76]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-05-16T15:46:01 EDT" name="Default test" finished-at="2026-05-16T15:46:02 EDT" duration-ms="719">
-      <class name="runner.JsPromptRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.JsPromptRunner@4b013c76]" started-at="2026-05-16T15:46:01 EDT" name="setUpClass" finished-at="2026-05-16T15:46:02 EDT" duration-ms="453" status="PASS">
+    <test started-at="2026-05-17T11:17:20 EDT" name="Default test" finished-at="2026-05-17T11:17:20 EDT" duration-ms="722">
+      <class name="runner.BugsLoginRunenr">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.BugsLoginRunenr@4b013c76]" started-at="2026-05-17T11:17:20 EDT" name="setUpClass" finished-at="2026-05-17T11:17:20 EDT" duration-ms="552" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1dd7796b]]>
+                <![CDATA[org.testng.TestRunner@291120f4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JsPromptRunner@4b013c76]" started-at="2026-05-16T15:46:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-16T15:46:02 EDT" duration-ms="41" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.BugsLoginRunenr@4b013c76]" started-at="2026-05-17T11:17:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-17T11:17:20 EDT" duration-ms="108" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["JsConfirm tests"]]>
+                <![CDATA["Testing multiple invalid login attempts"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Title of your feature"]]>
+                <![CDATA["WithBugs page Login tests"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JsPromptRunner@4b013c76]" started-at="2026-05-16T15:46:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-16T15:46:02 EDT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["JsConfirm tests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Title of your feature"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JsPromptRunner@4b013c76]" started-at="2026-05-16T15:46:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-16T15:46:02 EDT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[""]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Title of your feature"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JsPromptRunner@4b013c76]" started-at="2026-05-16T15:46:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-16T15:46:02 EDT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["JsPrompt tests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Title of your feature"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.JsPromptRunner@4b013c76]" started-at="2026-05-16T15:46:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-16T15:46:02 EDT" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["JsPrompt tests"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Title of your feature"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.JsPromptRunner@4b013c76]" started-at="2026-05-16T15:46:02 EDT" name="tearDownClass" finished-at="2026-05-16T15:46:02 EDT" duration-ms="186" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.BugsLoginRunenr@4b013c76]" started-at="2026-05-17T11:17:20 EDT" name="tearDownClass" finished-at="2026-05-17T11:17:20 EDT" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.JsPromptRunner -->
+      </class> <!-- runner.BugsLoginRunenr -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
