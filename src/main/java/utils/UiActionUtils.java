@@ -2,12 +2,16 @@ package utils;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
+import managers.DriverManager;
 import managers.ExtentTestManager;
 
 public class UiActionUtils {
 	public static void sendKeys(By locator, String data)
+	
 	{
+		
 		WaitUtils.presenceOfElementLocated(locator).sendKeys(data);
 		ExtentTestManager.log.info("Text eneterd is:  " +data);
 		
@@ -29,5 +33,17 @@ public class UiActionUtils {
 		ExtentTestManager.log.info("Alert appeared");
 		return WaitUtils.alertIsPresent();
 	}
+	
+	public static void clear(By locator, String elementName) {
+	    try {
+	        WebElement element = DriverManager.getDriver().findElement(locator);
+	        element.clear();
+	        
+	    } catch (Exception e) {
+	        
+	        throw e;
+	    }
+	}
 
+	
 }
